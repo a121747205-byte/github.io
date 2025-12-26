@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta name="google-site-verification" content="google034bd63c115b9fc6" />
+
+  <meta charset="UTF-8" />
+  <title>精準眼鏡公司｜國考合格驗光師專業配鏡</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.7;
+      background: #f5f7fb;
+      color: #222;
+    }
+    a { color: inherit; text-decoration: none; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-text-main { font-weight: 700; letter-spacing: 0.18em; font-size: 15px; }
+    .logo-text-sub { font-size: 11px; color: #5b6b85; }
+    nav ul { list-style: none; display: flex; gap: 18px; font-size: 14px; }
+    nav li a { position: relative; padding-bottom: 3px; }
+    nav li a::after {
+      content: ""; position: absolute; left: 0; bottom: 0;
+      width: 0; height: 2px; background: #1e88e5; transition: width .18s;
+    }
+    nav li a:hover::after { width: 100%; }
+    .nav-cta {
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #1e88e5;
+      color: #fff;
+      font-size: 13px;
+      box-shadow: 0 2px 8px rgba(30,136,229,.4);
+      white-space: nowrap;
+    }
+    main { margin-top: 8px; }
+    section { padding: 56px 16px; }
+    .container { max-width: 1120px; margin: 0 auto; }
+    .hero {
+      padding-top: 56px;
+      background: linear-gradient(135deg,#e3f2fd,#f5f7fb);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0,3fr) minmax(0,2.5fr);
+      gap: 32px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #e3f2fd;
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: #1565c0;
+      margin-bottom: 14px;
+    }
+    .hero-title {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .hero-title span { color: #1e88e5; }
+    .hero-sub {
+      font-size: 15px;
+      color: #4a5670;
+      margin-bottom: 16px;
+    }
+    .hero-slogans {
+      background: #ffffffaa;
+      border-radius: 14px;
+      padding: 10px 12px;
+      margin-bottom: 14px;
+      font-size: 13px;
+    }
+    .hero-slogans b { display: block; margin-bottom: 4px; color: #1e4f8f; }
+    .hero-slogans ul { margin-left: 16px; list-style: disc; }
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .btn-primary {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      background: #1e88e5;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(30,136,229,.4);
+    }
+    .btn-secondary {
+      padding: 9px 16px;
+      border-radius: 999px;
+      border: 1px solid #1e88e5;
+      background: #fff;
+      font-size: 13px;
+      color: #1e88e5;
+      cursor: pointer;
+    }
+    .hero-info { font-size: 13px; color: #444; }
+    .hero-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 12px 32px rgba(15,35,80,0.16);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::after {
+      content: ""; position: absolute;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 20% 0%,rgba(30,136,229,.18),transparent);
+      right: -40px; top: -40px;
+    }
+    .hero-card-title { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+    .hero-card-sub { font-size: 13px; color: #5b6b85; margin-bottom: 12px; }
+    .hero-pill {
+      display: inline-block;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #e3f2fd;
+      color: #1565c0;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .section-title { font-size: 22px; text-align: center; margin-bottom: 6px; }
+    .section-sub { font-size: 14px; color: #4a5670; text-align: center; margin-bottom: 24px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 14px 14px 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.04);
+      font-size: 13px;
+    }
+    .card-tag { font-size: 11px; color: #1e88e5; margin-bottom: 4px; }
+    .card-title { font-weight: 600; margin-bottom: 4px; }
+    .card ul { margin-left: 16px; margin-top: 4px; }
+    .card ul li { margin-bottom: 3px; }
+    .test-area {
+      display: grid;
+      grid-template-columns: minmax(0,1.2fr) minmax(0,1fr);
+      gap: 18px;
+    }
+    .box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 14px 14px 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.04);
+      font-size: 13px;
+    }
+    .q { margin-bottom: 10px; }
+    .q label { font-weight: 600; display: block; margin-bottom: 4px; }
+    .q-options { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+    .q-options label { font-weight: 400; }
+    select,input,textarea {
+      font-family: inherit;
+      font-size: 13px;
+      border-radius: 8px;
+      border: 1px solid #c5d0e0;
+      padding: 6px 8px;
+      width: 100%;
+    }
+    textarea { resize: vertical; min-height: 70px; }
+    select:focus,input:focus,textarea:focus {
+      outline: none;
+      border-color: #1e88e5;
+      box-shadow: 0 0 0 2px rgba(30,136,229,.2);
+    }
+    .faq-list { max-width: 780px; margin: 0 auto; }
+    .faq-item {
+      background: #fff;
+      border-radius: 14px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.04);
+      cursor: pointer;
+    }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; }
+    .faq-q span:nth-child(1) { font-size: 14px; font-weight: 600; }
+    .faq-toggle { font-size: 18px; color: #1e88e5; }
+    .faq-a { margin-top: 6px; font-size: 13px; color: #4a5670; display: none; }
+    .faq-item.open .faq-a { display: block; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0,1.1fr) minmax(0,1fr);
+      gap: 18px;
+    }
+    .contact-label { font-size: 12px; color: #5b6b85; }
+    .contact-value { font-size: 14px; font-weight: 600; }
+    .map-placeholder {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 12px;
+      border-radius: 12px;
+      border: 1px dashed #c5d0e0;
+      color: #4a5670;
+      background: #fafbff;
+    }
+    .form-msg { font-size: 12px; margin-top: 4px; display: none; }
+    .form-msg.ok { color: #1b5e20; }
+    .form-msg.err { color: #b71c1c; }
+    footer {
+      background: #0b1b33;
+      color: #d5e0ff;
+      padding: 18px 16px 22px;
+      font-size: 12px;
+      margin-top: 16px;
+    }
+    .footer-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; justify-content: space-between;
+      flex-wrap: wrap; gap: 10px;
+    }
+    @media (max-width: 880px) {
+      .hero-grid, .cards, .test-area, .contact-grid {
+        grid-template-columns: minmax(0,1fr);
+      }
+      nav ul { display: none; }
+    }
+    @media (max-width: 600px) {
+      .hero-title { font-size: 24px; }
+      .cards { grid-template-columns: minmax(0,1fr); }
+      section { padding: 42px 14px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div>
+      <div class="logo-text-main">精準眼鏡公司</div>
+      <div class="logo-text-sub">國考合格驗光師．專業驗光．精準配鏡．貼心服務</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">服務項目</a></li>
+        <li><a href="#test">視力小測驗</a></li>
+        <li><a href="#faq">常見問題</a></li>
+        <li><a href="#contact">預約與交通</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta">預約驗光 02-27530109</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="badge">👓 國考合格驗光師在這裡守護你的視力</div>
+          <h1 class="hero-title">
+            精準眼鏡公司 — <span>國考合格驗光師專業配鏡</span>
+          </h1>
+          <p class="hero-sub">
+            不只看得清楚，更要看得舒服、看得安心。
+            我們以醫療級專業為基礎，結合時尚與溫暖服務，為你打造最適合的視界。
+          </p>
+          <div class="hero-slogans">
+            <b>品牌核心理念</b>
+            <ul>
+              <li>專業與溫度並行，看見更好的自己。</li>
+              <li>精準驗光・安心配鏡・給你最舒適的視界。</li>
+              <li>專業驗光，溫暖陪伴你的每一次視界改變。</li>
+              <li>您的視力保健專家 — 陪你長久看見美好生活。</li>
+            </ul>
+          </div>
+          <div class="hero-cta-row">
+            <button class="btn-primary" onclick="scrollToSection('contact')">立即預約專業驗光</button>
+            <button class="btn-secondary" onclick="scrollToSection('test')">先做一個視力小測驗</button>
+          </div>
+          <p class="hero-info">
+            地址：台北市松山區南京東路五段71號1樓　｜　電話：<a href="tel:0227530109">02-27530109</a><br />
+            營業時間：週一～週六 10:30–21:00（週日公休）
+          </p>
+        </div>
+        <div>
+          <div class="hero-card">
+            <div class="hero-card-title">第一次來精準眼鏡，可以期待什麼？</div>
+            <div class="hero-card-sub">
+              我們會先了解你的生活與用眼情況，再進行完整驗光。
+              從度數、鏡片到鏡框風格，一步步與你討論，不趕時間、慢慢調整到最舒服為止。
+            </div>
+            <div>
+              <span class="hero-pill">國考合格驗光師親自檢查</span>
+              <span class="hero-pill">完整解說度數與視覺狀況</span>
+              <span class="hero-pill">依工作需求客製配鏡方案</span>
+              <span class="hero-pill">售後調整與視力追蹤</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">專業服務項目</h2>
+      <p class="section-sub">
+        從學生到上班族、從年輕到熟齡，每個階段的視力需求都不同。
+        精準眼鏡公司提供完整與貼心的視覺解決方案。
+      </p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-tag">專業驗光</div>
+          <div class="card-title">國考合格驗光師全程把關</div>
+          <p>依照醫療級流程檢查近視、散光、老花與雙眼平衡狀況。</p>
+          <ul>
+            <li>詳細說明每一個度數的意義</li>
+            <li>評估是否需要不同用途的第二副眼鏡</li>
+            <li>提供孩童與青少年視力追蹤建議</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-tag">生活配鏡</div>
+          <div class="card-title">上班、開車、閱讀，一副不夠就幫你規劃</div>
+          <p>依照你的工作型態與休閒習慣，設計專屬的配鏡組合。</p>
+          <ul>
+            <li>電腦族防疲勞／抗藍光鏡片建議</li>
+            <li>開車、夜間用眼與戶外活動專用鏡片</li>
+            <li>長時間配戴的重量與舒適度調整</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-tag">熟齡視覺</div>
+          <div class="card-title">老花與漸進多焦鏡片諮詢</div>
+          <p>從閱讀距離、工作桌面到走動安全，細心規劃每一個焦段。</p>
+          <ul>
+            <li>評估最常用的閱讀距離與高度</li>
+            <li>協助適應漸進多焦鏡片，必要時調整設計</li>
+            <li>搭配時尚框型，保留個人風格</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-tag">學童視力</div>
+          <div class="card-title">關心孩子的每一次視力變化</div>
+          <p>建立專屬視力成長曲線，與家長一起守護孩子的眼睛。</p>
+          <ul>
+            <li>每次驗光都會紀錄度數變化</li>
+            <li>提醒用眼時間、閱讀距離與休息習慣</li>
+            <li>必要時建議進一步眼科檢查</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-tag">時尚鏡框</div>
+          <div class="card-title">專人協助挑選臉型適合款式</div>
+          <p>不只是看得清楚，也要看起來精神好、氣色佳。</p>
+          <ul>
+            <li>依臉型與膚色挑選合適顏色與線條</li>
+            <li>上班正式、休閒外出不同風格建議</li>
+            <li>配戴後細調鼻墊與鏡腿角度，增加舒適度</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-tag">售後服務</div>
+          <div class="card-title">你的眼鏡，我們持續照顧</div>
+          <p>配鏡不是結束，而是和你建立長期關係的開始。</p>
+          <ul>
+            <li>終身基本清潔與鏡框微調</li>
+            <li>視力有變化時可再安排驗光諮詢</li>
+            <li>說明鏡片保固與正確保養方式</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="test">
+    <div class="container">
+      <h2 class="section-title">線上視力與用眼狀況小測驗</h2>
+      <p class="section-sub">
+        這不是正式驗光結果，但可以幫助你初步了解自己的用眼情況，
+        是否需要儘快安排到店檢查。
+      </p>
+      <div class="test-area">
+        <div class="box">
+          <div class="q">
+            <label>1. 你平常最常用眼的情境？</label>
+            <div class="q-options">
+              <label><input type="radio" name="q1" value="office"> 長時間電腦、辦公</label>
+              <label><input type="radio" name="q1" value="study"> 學生閱讀、準備考試</label>
+              <label><input type="radio" name="q1" value="drive"> 開車或戶外活動較多</label>
+            </div>
+          </div>
+          <div class="q">
+            <label>2. 最近三個月，你常出現哪些情況？</label>
+            <div class="q-options">
+              <label><input type="radio" name="q2" value="tired"> 眼睛容易酸、疲勞</label>
+              <label><input type="radio" name="q2" value="blur"> 看近或看遠容易模糊</label>
+              <label><input type="radio" name="q2" value="ok"> 大致還好，偶爾不適</label>
+            </div>
+          </div>
+          <div class="q">
+            <label>3. 目前是否已有配戴眼鏡？</label>
+            <div class="q-options">
+              <label><input type="radio" name="q3" value="first"> 沒有，第一次考慮配鏡</label>
+              <label><input type="radio" name="q3" value="update"> 有，但覺得度數可能變了</label>
+              <label><input type="radio" name="q3" value="multi"> 有多副眼鏡搭配不同情境</label>
+            </div>
+          </div>
+          <div class="q">
+            <label>4. 你的年齡大約落在？</label>
+            <select id="age">
+              <option value="">請選擇</option>
+              <option value="teen">18 歲以下</option>
+              <option value="adult">18–39 歲</option>
+              <option value="mid">40–54 歲</option>
+              <option value="senior">55 歲以上</option>
+            </select>
+          </div>
+          <button class="btn-primary" id="runTest">產生建議</button>
+          <button class="btn-secondary" id="resetTest" style="margin-left:8px;">重新填寫</button>
+          <p style="font-size:12px;color:#5b6b85;margin-top:8px;">
+            ※ 本測驗僅供參考，不做為醫療診斷或處方依據；建議至少每一年安排一次專業驗光。
+          </p>
+        </div>
+        <div class="box" id="testResult">
+          <h3 style="font-size:15px;margin-bottom:6px;">請先完成左側問題，我們會根據你的回答給出建議。</h3>
+          <p id="testResultText" style="font-size:13px;color:#4a5670;">
+            完成小測驗後，我們會判斷你是否建議儘快到店檢查，或是可以先建立視力基準，
+            以及可能適合的鏡片與配鏡方向。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <h2 class="section-title">常見問題 Q &amp; A</h2>
+      <p class="section-sub">第一次來精準眼鏡公司，不妨先看看這裡，也歡迎直接來電詢問。</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Q1. 第一次來，需要先預約嗎？</span>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            建議先電話預約，可以避免等待，也方便我們預留驗光時間。
+            若臨時路過，也可以現場詢問，若現場客人較多，我們會協助安排稍後時段再回來。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Q2. 驗光與配鏡大約需要多久時間？</span>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            一般完整驗光約 20–30 分鐘，挑選鏡框與說明鏡片再約 20–30 分鐘，
+            視你選擇與討論的時間而定。若有漸進多焦或特殊需求，可能會久一點，
+            我們都會耐心與你溝通。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Q3. 目前的眼鏡戴得不舒服，可以只來諮詢或調整嗎？</span>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            當然可以！歡迎你帶著現在的眼鏡來，我們可以協助檢查度數、鏡片設計與鏡框配戴狀況，
+            並提供調整或重新配鏡的建議。若需要再次驗光，我們也會事先說明。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Q4. 孩子多久應該檢查一次視力？</span>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            若孩子已有近視，建議約每 6 個月檢查一次；尚未近視者，至少年檢查一次。
+            我們會與家長一起關心孩子用眼時間、閱讀姿勢與戶外活動量，
+            找出最適合的視力保健方式。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">預約驗光與聯絡方式</h2>
+      <p class="section-sub">歡迎來電或線上留下資料，我們會在營業時間內盡快與你聯繫確認時段。</p>
+      <div class="contact-grid">
+        <div class="box">
+          <div style="margin-bottom:8px;">
+            <div class="contact-label">店名</div>
+            <div class="contact-value">精準眼鏡公司</div>
+          </div>
+          <div style="margin-bottom:8px;">
+            <div class="contact-label">地址</div>
+            <div class="contact-value">台北市松山區南京東路五段71號1樓</div>
+          </div>
+          <div style="margin-bottom:8px;">
+            <div class="contact-label">電話</div>
+            <div class="contact-value"><a href="tel:0227530109">02-27530109</a></div>
+          </div>
+          <div style="margin-bottom:8px;">
+            <div class="contact-label">營業時間</div>
+            <div class="contact-value">週一～週六 10:30–21:00（週日公休）</div>
+          </div>
+          <div style="margin-bottom:8px;">
+            <div class="contact-label">驗光師資格</div>
+            <div class="contact-value">國家考試及格驗光師親自驗光與說明</div>
+          </div>
+          <div class="map-placeholder">
+            
+<div style="margin: 30px 0; padding: 20px; background: #ffffff; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <h2 style="margin-bottom:15px; font-size:22px; font-weight:700; color:#333;">📍 店面位置（導航）</h2>
+  <div style="border-radius:12px; overflow:hidden;">
+    <iframe src="https://www.google.com/maps?q=台北市松山區南京東路五段71號1樓&output=embed" width="100%" height="320" style="border:0;"></iframe>
+  </div>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=台北市松山區南京東路五段71號1樓" 
+     style="display:block; margin-top:18px; padding:12px 0; background:#007bff; color:white; text-align:center; border-radius:10px; font-size:18px; text-decoration:none;">
+     📱 一鍵導航至精準眼鏡公司
+  </a>
+</div>
+
+          </div>
+        </div>
+        <div class="box">
+          <form id="contactForm">
+            <div class="q">
+              <label for="name">姓名（必填）</label>
+              <input id="name" type="text" placeholder="請輸入姓名" />
+            </div>
+            <div class="q">
+              <label for="phone">聯絡電話（必填）</label>
+              <input id="phone" type="tel" placeholder="請輸入可聯絡的電話" />
+            </div>
+            <div class="q">
+              <label for="time">方便聯絡的時段</label>
+              <input id="time" type="text" placeholder="例如：平日晚上 7 點後、週六下午" />
+            </div>
+            <div class="q">
+              <label for="msg">想詢問的內容</label>
+              <textarea id="msg" placeholder="例如：第一次配鏡、老花漸進、學童視力檢查等"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;">送出預約需求（示意）</button>
+            <div id="formMsg" class="form-msg"></div>
+            <p style="font-size:11px;color:#5b6b85;margin-top:6px;">
+              ※ 此表單目前為示意，實際收件可交由網站工程師協助串接 Email 或 Line 通知。
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year"></span> 精準眼鏡公司 Precision Vision Optical. 版權所有。</div>
+    <div>
+      電話：<a href="tel:0227530109">02-27530109</a>　｜　
+      地址：台北市松山區南京東路五段71號1樓
+    </div>
+  </div>
+</footer>
+
+<script>
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - 70;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  }
+
+  document.querySelectorAll(".faq-item").forEach(item => {
+    item.addEventListener("click", () => {
+      const open = item.classList.contains("open");
+      document.querySelectorAll(".faq-item").forEach(i => {
+        i.classList.remove("open");
+        i.querySelector(".faq-toggle").textContent = "＋";
+      });
+      if (!open) {
+        item.classList.add("open");
+        item.querySelector(".faq-toggle").textContent = "－";
+      }
+    });
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const runBtn = document.getElementById("runTest");
+  const resetBtn = document.getElementById("resetTest");
+  runBtn.addEventListener("click", () => {
+    const q1 = document.querySelector("input[name='q1']:checked");
+    const q2 = document.querySelector("input[name='q2']:checked");
+    const q3 = document.querySelector("input[name='q3']:checked");
+    const age = document.getElementById("age").value;
+    const box = document.getElementById("testResult");
+    const textEl = document.getElementById("testResultText");
+
+    if (!q1 || !q2 || !q3 || !age) {
+      box.querySelector("h3").textContent = "還差幾題沒填完喔！";
+      textEl.textContent = "請先完成所有題目，我們才能依你的情況提供較準確的建議。若有明顯頭痛、視力突然變差或視物重影，請盡快就醫或與我們聯繫。";
+      return;
+    }
+
+    let title = "";
+    let text = "";
+
+    if (q1.value === "office" && (q2.value === "tired" || q2.value === "blur")) {
+      title = "建議儘快安排一次完整驗光。";
+      text = "你屬於長時間電腦用眼，又感覺疲勞或模糊，代表目前的度數或鏡片設計可能不再適合。建議在一至兩週內安排到店，由國考合格驗光師完整檢查，並依你的工作距離與時間重新規劃配鏡。";
+    } else if (q1.value === "study" && age === "teen") {
+      title = "建議建立學童視力追蹤紀錄。";
+      text = "你的用眼以閱讀與課業為主，若視力已有不適，更需要定期檢查與追蹤。建議至少每 6 個月檢查一次視力，並與家長一同調整用眼時間與習慣。";
+    } else if (age === "mid" || age === "senior") {
+      title = "可能已有老花或多焦需求，建議諮詢漸進鏡片。";
+      text = "40 歲之後，眼睛調節能力會明顯下降，若你覺得看近需要拿遠、看手機吃力，很可能需要老花或多焦點鏡片。到店後，我們會依你的生活與工作情境，設計最適合的多焦方案。";
+    } else if (q2.value === "ok" && q3.value === "first") {
+      title = "目前狀況尚可，但仍建議建立視力基準。";
+      text = "即使尚未有明顯不適，仍建議至少每 1–2 年做一次專業驗光，建立自己的視力基準，方便未來比較度數是否變化，也能及早發現用眼問題。";
+    } else {
+      title = "你的眼睛值得被好好照顧，建議安排到店諮詢。";
+      text = "從你的回答來看，已經感受到某些用眼上的不舒服或變化。透過驗光師面對面檢查與說明，我們可以幫你確認度數與配鏡方向，讓視覺更清楚、配戴更舒服。";
+    }
+
+    box.querySelector("h3").textContent = title;
+    textEl.textContent = text + " 若你方便，歡迎直接來電 02-27530109 預約，我們會為你保留專屬驗光時間。";
+  });
+
+  resetBtn.addEventListener("click", () => {
+    document.querySelectorAll("input[name='q1'],input[name='q2'],input[name='q3']").forEach(i => i.checked = false);
+    document.getElementById("age").value = "";
+    document.getElementById("testResult").querySelector("h3").textContent =
+      "請先完成左側問題，我們會根據你的回答給出建議。";
+    document.getElementById("testResultText").textContent =
+      "完成小測驗後，我們會判斷你是否建議儘快到店檢查，或是可以先建立視力基準，並提供可能適合的鏡片與配鏡方向。";
+  });
+
+  const form = document.getElementById("contactForm");
+  const formMsg = document.getElementById("formMsg");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    if (!name || !phone) {
+      formMsg.textContent = "請至少填寫姓名與聯絡電話，我們才能與你聯繫喔。";
+      formMsg.className = "form-msg err";
+      formMsg.style.display = "block";
+      return;
+    }
+    formMsg.textContent = "感謝你的填寫！此示意表單並未真正送出，實際上線時可改由 Email 或 Line 通知店家。";
+    formMsg.className = "form-msg ok";
+    formMsg.style.display = "block";
+    form.reset();
+  });
+</script>
+</body>
+</html>
